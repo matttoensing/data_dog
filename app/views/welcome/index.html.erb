@@ -1,0 +1,17 @@
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <%= link_to "DogData", root_path, class: "navbar-brand" %>
+  </div>
+  <div class="container">
+    <ul class="navbar-nav">
+      <%= form_tag :search, method: :get, class: "form-inline" do %>
+        <div class="form-group search-field">
+          <p>Please enter how many dog pictures you would like returned.</p>
+          <%= number_field_tag :number, nil, in: 1..10 %>
+          <%= submit_tag "Fetch Dogs", class: "btn-small btn-primary" %>
+        </div>
+      <% end %>
+    </ul>
+  </div>
+</nav>
