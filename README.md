@@ -27,7 +27,7 @@ _NOTE: Please use the existing form in the application._
 ```
 As a user,
 When I visit the "/"
-And I select "5" from the dropdown
+And I enter "5" into the number field
 And I click on "Fetch Dogs"
 Then my path should be "/search"
 And I should see a message "5 Results"
